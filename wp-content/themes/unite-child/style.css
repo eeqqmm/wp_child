@@ -1,0 +1,14 @@
+/*
+Theme Name: unite-child
+Template: unite
+
+Не обязательные параметры:
+Theme URI: https://wordpress.org/themes/unite/
+Description: Дочерняя тема для темы Unite
+Author: Kama
+Author URI: http://example.com/about/
+Version: 1.0
+
+*/
+@import url("./сss/style.css");
+@import url("../unite/inc/css/bootstrap.min.css");

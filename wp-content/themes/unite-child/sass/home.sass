@@ -1,0 +1,34 @@
+@import val
+@import mixins
+.home
+  width: 100%
+  height: 100%
+  display: block
+  padding: 10px
+  &:hover,&:focus
+    text-decoration: none
+  @media (min-width: $tablet_width)
+      max-height: 503px
+  &__img img
+    width: 100%
+    object-fit: cover
+    height: 200px
+    @media (min-width : $mobile-width)
+      height: 350px
+  h2
+    font-size: 25px
+    color: black
+  &:hover
+    text-decoration: none
+.description
+  p
+    font-weight: 400
+    font-size: 18px
+    color: black
+  &__floor , &__address , &__space.col-xs-4.col-sm-6.col-md-6 , &__space.col-xs-6.col-sm-6.col-md-6
+    @include text-right
+  &__address
+    @media (min-width: $desktop_width)
+      font-size: 18px
+  &__space.col-xs-4.col-sm-4.col-md-4
+    text-align: center

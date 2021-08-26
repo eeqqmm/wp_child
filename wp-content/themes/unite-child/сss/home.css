@@ -1,0 +1,59 @@
+.home {
+	width: 100%;
+	height: 100%;
+	display: block;
+	padding: 10px;
+}
+
+.home:hover, .home:focus {
+	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+	.home {
+		max-height: 503px;
+	}
+}
+
+.home__img img {
+	width: 100%;
+	object-fit: cover;
+	height: 200px;
+}
+
+@media (min-width: 320px) {
+	.home__img img {
+		height: 350px;
+	}
+}
+
+.home h2 {
+	font-size: 25px;
+	color: black;
+}
+
+.home:hover {
+	text-decoration: none;
+}
+
+.description p {
+	font-weight: 400;
+	font-size: 18px;
+	color: black;
+}
+
+.description__floor, .description__address, .description__space.col-xs-4.col-sm-6.col-md-6, .description__space.col-xs-6.col-sm-6.col-md-6 {
+	text-align: right;
+}
+
+@media (min-width: 1200px) {
+	.description__address {
+		font-size: 18px;
+	}
+}
+
+.description__space.col-xs-4.col-sm-4.col-md-4 {
+	text-align: center;
+}
+
+/*# sourceMappingURL=home.css.map */
