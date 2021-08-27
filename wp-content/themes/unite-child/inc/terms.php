@@ -11,7 +11,7 @@ function create_taxonomy()
             "singular_label" => "Agency",
             'show_in_rest'          => true,
             'public'                => true,
-            "rewrite" => array('slug' => 'agency')//, 'hierarchical' => true
+            "rewrite" => array('slug' => 'company')//, 'hierarchical' => true
         )
     );
 }

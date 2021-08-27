@@ -14,10 +14,10 @@ require_once get_theme_file_path('inc/post_types.php');
  */
 function get_transient_from_query_string($transient,$WP_Query_string)
 {
-    if (false === get_transient($transient)) {
+    if (false === get_transient('wp_w'.$transient)) {
         $special_query_results = new WP_Query($WP_Query_string);
-        set_transient($transient, $special_query_results);
+        set_transient('wp_w'.$transient, $special_query_results);
     }
     wp_reset_query();
-    return get_transient($transient);
+    return get_transient('wp_w'.$transient);
 }
